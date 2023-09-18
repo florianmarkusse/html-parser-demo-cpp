@@ -1,0 +1,5 @@
+WarningsAsErrors: ''
+CheckOptions:
+  - key: indentation.TabWidth
+    value: '4'
+
