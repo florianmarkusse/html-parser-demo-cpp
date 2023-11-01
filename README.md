@@ -4,6 +4,8 @@
 
 This is a demo project showcasing how to use the `html-parser` [library](https://github.com/florianmarkusse/html-parser) in a C++ project. The `html-parser` library allows you to parse HTML files in your C applications.
 
+Please note the `-fpermissive` flag that needs to be compiled with to allow the 'unsafe' C-casts in the `html-parser`. Moreover, I am constructing the memory arena manually instead of using the utility, `flo_html_createArena`. Dependent on your C++ guidelines, the casts used in the library may or may not be permitted in your project.
+
 ## Getting Started
 
 Follow these steps to set up and run the demo project:

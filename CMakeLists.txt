@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(CMAKE_BUILD_TYPE "Build type (Debug, Release, Profiling)" "Release")
 
 ### Flags ###
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall") # Use C++ flags
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fpermissive -Wno-write-strings") # Use C++ flags
 
 if (CMAKE_BUILD_TYPE STREQUAL "Profiling")
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pg")
